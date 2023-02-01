@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: const PreferredSize(
           preferredSize: Size(double.infinity, 52), child: ResponaiveAppBar()),
       drawer: const ResponsiveVisibility(
