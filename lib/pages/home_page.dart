@@ -2,6 +2,7 @@ import 'package:cv_flutter/pages/widgets/responsive_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
+import 'widgets/drawer_tile.dart';
 import 'widgets/home_responsive.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,13 +14,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: const PreferredSize(
           preferredSize: Size(double.infinity, 52), child: ResponaiveAppBar()),
-      drawer: const ResponsiveVisibility(
-        visible: false,
-        visibleWhen: [
-          Condition.smallerThan(name: DESKTOP),
-        ],
-        child: Drawer(),
-      ),
+      drawer: const DrawerTile(),
       body: Align(
         alignment: Alignment.center,
         child: ConstrainedBox(
