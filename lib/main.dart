@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
               const ResponsiveBreakpoint.resize(700, name: TABLET),
               const ResponsiveBreakpoint.resize(800, name: DESKTOP)
             ]),
-        title: 'Flutter Demo',
+        title: 'João Gabriel - Desenvolvedor Mobile | Flutter & Dart',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

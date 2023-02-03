@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       body: Align(
         alignment: Alignment.center,
         child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 1200),
+            constraints: const BoxConstraints(maxWidth: 1400),
             child: ListView(
               children: const [HomeResponsive()],
             )),
