@@ -15,7 +15,7 @@ class DrawerTile extends StatelessWidget {
             onTap: () {},
           ),
           ListTile(
-            title: const Text('Fornação'),
+            title: const Text('Formação'),
             textColor: Colors.black,
             onTap: () {},
           ),

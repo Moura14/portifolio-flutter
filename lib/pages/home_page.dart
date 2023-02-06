@@ -1,8 +1,8 @@
 import 'package:cv_flutter/pages/widgets/responsive_app_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
 import 'widgets/drawer_tile.dart';
+import 'widgets/exp_responsive.dart';
 import 'widgets/home_responsive.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 1400),
             child: ListView(
-              children: const [HomeResponsive()],
+              children: const [HomeResponsive(), ExpResponsive()],
             )),
       ),
     );
