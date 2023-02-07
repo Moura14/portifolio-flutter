@@ -18,38 +18,77 @@ class ExpCard extends StatelessWidget {
     return Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         color: Colors.grey[50],
-        child: Container(
-          width: 300,
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title,
-                textAlign: TextAlign.start,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Text(
-                desription,
-                textAlign: TextAlign.start,
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    color: Colors.grey),
-              ),
-              const SizedBox(
-                height: 16,
-              ),
-              Text(
-                subtitle,
-                style: const TextStyle(fontSize: 15, color: Colors.grey),
-              )
-            ],
-          ),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            return constraints.maxWidth > 800
+                ? Container(
+                    width: 300,
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Text(
+                          title,
+                          textAlign: TextAlign.start,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          desription,
+                          textAlign: TextAlign.start,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.grey),
+                        ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          subtitle,
+                          style:
+                              const TextStyle(fontSize: 15, color: Colors.grey),
+                        )
+                      ],
+                    ),
+                  )
+                : Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          textAlign: TextAlign.start,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          desription,
+                          textAlign: TextAlign.start,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              color: Colors.grey),
+                        ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        Text(
+                          subtitle,
+                          style:
+                              const TextStyle(fontSize: 15, color: Colors.grey),
+                        )
+                      ],
+                    ),
+                  );
+          },
         ));
   }
 }
