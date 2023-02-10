@@ -10,42 +10,89 @@ class ExpResponsive extends StatelessWidget {
         constraints: const BoxConstraints(maxWidth: double.infinity),
         child: Padding(
             padding: const EdgeInsets.only(top: 250, left: 290),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'Experiência',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 4.0,
-                  children: const [
-                    ExpCard(
-                      title: ('Estágiario'),
-                      desription: ('Policia Civil do Distrito Federal'),
-                      subtitle:
-                          ('Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos. Construção de algoritmo com linguagem Python'),
-                    ),
-                    ExpCard(
-                      title: ('Desenvolvedor Mobile'),
-                      desription: ('Loja virtual'),
-                      subtitle:
-                          ('Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias, cupom de desconto e etc..'),
-                    ),
-                    ExpCard(
-                      title: ('Desenvolvedor Mobile'),
-                      desription: ('OLX clone'),
-                      subtitle:
-                          ('Clone do aplicativo OLX feito com Flutter e MobX para gerenciamento de estado e Parse Server para armazenamento de informações dos clientes, vendas, produtos e etc..'),
-                    )
-                  ],
-                )
-              ],
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return constraints.maxWidth > 700
+                    ? Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Experiência',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                                fontSize: 25, fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 4.0,
+                            children: const [
+                              ExpCard(
+                                  icon: Icons.account_circle,
+                                  title:
+                                      'Polícia Civil do Distrito Federal - Estágiario',
+                                  description:
+                                      'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                              ExpCard(
+                                  icon: Icons.account_circle,
+                                  title: 'Loja virtual - Desenvolvedor Mobile',
+                                  description:
+                                      'Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias,cupom de desconto e etc..'),
+                              ExpCard(
+                                  icon: Icons.account_circle,
+                                  title:
+                                      'Buscador de GIFs - Desenvolvedor Mobile',
+                                  description:
+                                      'Aplicativo de Buscador de GIFs feito com Flutter juntamente com a API da Giphy Developers')
+                            ],
+                          )
+                        ],
+                      )
+                    : Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Experiência',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            Wrap(
+                              crossAxisAlignment: WrapCrossAlignment.start,
+                              spacing: 8,
+                              runSpacing: 4.0,
+                              children: const [
+                                ExpCard(
+                                    icon: Icons.account_circle,
+                                    title:
+                                        'Polícia Civil do Distrito Federal - Estágiario',
+                                    description:
+                                        'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                                ExpCard(
+                                    icon: Icons.account_circle,
+                                    title:
+                                        'Loja virtual - Desenvolvedor Mobile',
+                                    description:
+                                        'Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias,cupom de desconto e etc..'),
+                                ExpCard(
+                                    icon: Icons.account_circle,
+                                    title:
+                                        'Buscador de GIFs - Desenvolvedor Mobile',
+                                    description:
+                                        'Aplicativo de Buscador de GIFs feito com Flutter juntamente com a API da Giphy Developers')
+                              ],
+                            )
+                          ],
+                        ),
+                      );
+              },
             )));
   }
 }
