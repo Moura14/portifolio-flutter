@@ -16,9 +16,9 @@ class ExpCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constrants) {
-      return constrants.maxWidth < 800
+      return constrants.maxWidth < 700
           ? Container(
-              width: double.infinity,
+              width: 600,
               padding: const EdgeInsets.all(20),
               child: Card(
                 child: Padding(
