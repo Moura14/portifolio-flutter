@@ -53,7 +53,7 @@ class ExpResponsive extends StatelessWidget {
                   ],
                 ))
             : Padding(
-                padding: const EdgeInsets.only(top: 150, left: 30),
+                padding: const EdgeInsets.only(top: 150, left: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
@@ -61,7 +61,30 @@ class ExpResponsive extends StatelessWidget {
                       'Experiência',
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                    )
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    ExpCard(
+                        icon: Icons.account_circle,
+                        title: 'Polícia Civil do Distrito Federal - Estágiario',
+                        description:
+                            'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                    ExpCard(
+                        icon: Icons.account_circle,
+                        title: 'OLX Clone - Desenvolvedor Mobile',
+                        description:
+                            'clone do aplicativo OLX feito com Flutter e MobX para gerenciamento de estado e Parse Server para armazenamento de informações dos clientes, vendas, produtos e etc..'),
+                    ExpCard(
+                        icon: Icons.account_circle,
+                        title: 'Buscador de GIFs - Desenvolvedor Mobile',
+                        description:
+                            'Aplicativo de Buscador de GIFs feito com Flutter juntamente com a API da Giphy Developers'),
+                    ExpCard(
+                        icon: Icons.account_circle,
+                        title: 'Loja virtual - Desenvolvedor Mobile',
+                        description:
+                            'Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias,cupom de desconto e etc..')
                   ],
                 ),
               );
