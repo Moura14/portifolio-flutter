@@ -8,7 +8,7 @@ class ExpResponsive extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        return constraints.maxWidth > 700
+        return constraints.maxWidth >= 700
             ? Padding(
                 padding: const EdgeInsets.only(left: 250, top: 250, right: 100),
                 child: Column(
