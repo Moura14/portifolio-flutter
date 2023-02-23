@@ -1,4 +1,4 @@
-import 'package:cv_flutter/pages/home_page.dart';
+import 'package:cv_flutter/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 

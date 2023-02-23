@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class FormaResponsive extends StatelessWidget {
@@ -11,22 +10,58 @@ class FormaResponsive extends StatelessWidget {
           ? Padding(
               padding: const EdgeInsets.only(left: 250, top: 250, right: 100),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     'Formação',
-                    textAlign: TextAlign.end,
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                   Row(
                     children: [
-                      const Expanded(
-                          child: AutoSizeText(
-                        'Estou cursando Análise e desenvolvimento de sistemas na UDF além de sempre estar fazendo cursos intensivos para me qualificar ainda mais na área',
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      )),
+                      Expanded(
+                        child: Column(
+                          children: const [
+                            Text(
+                              'Atualmente faço faculdade de Análise e Desenvolvimento de Sistemas, além disso, sou estágiario em um projeto de super-resolução em imagens de vídeos na Polícia Civil do Distrito Federal. Venho sempre fazendo cursos intensivos para me aperfeiçoar ainda mais na área ',
+                              textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(fontSize: 20, color: Colors.grey),
+                            ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            ListTile(
+                              title: Text(
+                                  'Criação de Apps Android/iOS/Web com Flutter'),
+                              textColor: Colors.grey,
+                              leading: Icon(Icons.book),
+                              iconColor: Colors.grey,
+                            ),
+                            ListTile(
+                              title: Text(
+                                  'Notificações por Push no Android, iOS e Web com Flutter'),
+                              textColor: Colors.grey,
+                              leading: Icon(Icons.book),
+                              iconColor: Colors.grey,
+                            ),
+                            ListTile(
+                              title:
+                                  Text('Responsividade no Flutter em Detalhes'),
+                              textColor: Colors.grey,
+                              leading: Icon(Icons.book),
+                              iconColor: Colors.grey,
+                            ),
+                            ListTile(
+                              title: Text('Curso de Flutter'),
+                              textColor: Colors.grey,
+                              leading: Icon(Icons.book),
+                              iconColor: Colors.grey,
+                            )
+                          ],
+                        ),
+                      ),
                       const SizedBox(
-                        height: 90,
+                        width: 90,
                       ),
                       Expanded(
                         child: Image.asset('images/education.png'),
