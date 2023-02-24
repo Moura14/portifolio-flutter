@@ -8,7 +8,7 @@ class FormaResponsive extends StatelessWidget {
     return LayoutBuilder(builder: (context, constraints) {
       return constraints.maxWidth >= 700
           ? Padding(
-              padding: const EdgeInsets.only(left: 250, top: 250, right: 100),
+              padding: const EdgeInsets.only(left: 250, top: 150, right: 100),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -22,7 +22,7 @@ class FormaResponsive extends StatelessWidget {
                         child: Column(
                           children: const [
                             Text(
-                              'Atualmente faço faculdade de Análise e Desenvolvimento de Sistemas, além disso, sou estágiario em um projeto de super-resolução em imagens de vídeos na Polícia Civil do Distrito Federal. Venho sempre fazendo cursos intensivos para me aperfeiçoar ainda mais na área ',
+                              'Desenvolvo pequenos aplicativos utilizando o Flutter/Dart além de sempre estar fazendo cursos na área para me aperfeiçoar ainda mais na área',
                               textAlign: TextAlign.justify,
                               style:
                                   TextStyle(fontSize: 20, color: Colors.grey),
@@ -70,7 +70,54 @@ class FormaResponsive extends StatelessWidget {
                   )
                 ],
               ))
-          : Container();
+          : Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Formação',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Text(
+                    'Desenvolvo pequenos aplicativos utilizando o Flutter/Dart além de sempre estar fazendo cursos na área para me aperfeiçoar ainda mais na área',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(fontSize: 20, color: Colors.grey),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  ListTile(
+                    title: Text('Criação de Apps Android/iOS/Web com Flutter'),
+                    textColor: Colors.grey,
+                    leading: Icon(Icons.book),
+                    iconColor: Colors.grey,
+                  ),
+                  ListTile(
+                    title: Text(
+                        'Notificações por Push no Android, iOS e Web com Flutter'),
+                    textColor: Colors.grey,
+                    leading: Icon(Icons.book),
+                    iconColor: Colors.grey,
+                  ),
+                  ListTile(
+                    title: Text('Responsividade no Flutter em Detalhes'),
+                    textColor: Colors.grey,
+                    leading: Icon(Icons.book),
+                    iconColor: Colors.grey,
+                  ),
+                  ListTile(
+                    title: Text('Curso de Flutter'),
+                    textColor: Colors.grey,
+                    leading: Icon(Icons.book),
+                    iconColor: Colors.grey,
+                  )
+                ],
+              ),
+            );
     });
   }
 }
