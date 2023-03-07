@@ -2,8 +2,7 @@ import 'package:cv_flutter/pages/widgets/responsive_app_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/drawer_tile.dart';
-import '../widgets/exp_responsive.dart';
-import '../widgets/forma_responsive.dart';
+
 import '../widgets/home_responsive.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,8 +22,6 @@ class HomePage extends StatelessWidget {
             child: ListView(
               children: const [
                 HomeResponsive(),
-                ExpResponsive(),
-                FormaResponsive()
               ],
             )),
       ),

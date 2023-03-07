@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class ExpCard extends StatelessWidget {
@@ -16,9 +17,9 @@ class ExpCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constrants) {
-      return constrants.maxWidth < 700
+      return constrants.maxWidth > 800
           ? Container(
-              width: 600,
+              width: 500,
               padding: const EdgeInsets.all(20),
               child: Card(
                 child: Padding(
@@ -55,7 +56,7 @@ class ExpCard extends StatelessWidget {
               ),
             )
           : Container(
-              width: 500,
+              width: 900,
               padding: const EdgeInsets.all(20),
               child: Card(
                 child: Padding(
@@ -67,8 +68,9 @@ class ExpCard extends StatelessWidget {
                       const SizedBox(
                         height: 16,
                       ),
-                      Text(
+                      AutoSizeText(
                         title,
+                        maxLines: 2,
                         style: const TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),

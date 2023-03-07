@@ -21,7 +21,7 @@ class ResponaiveAppBar extends StatelessWidget {
                                 child: MouseRegion(
                               cursor: SystemMouseCursors.click,
                               child: Text(
-                                'João Gabriel',
+                                '<João Gabriel/>',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black,
