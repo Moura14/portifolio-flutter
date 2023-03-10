@@ -26,7 +26,7 @@ class HomeResponsive extends StatelessWidget {
                             const AutoSizeText(
                               'Desenvolvedor Mobile | Flutter & Dart',
                               style: TextStyle(
-                                  fontSize: 70, fontWeight: FontWeight.bold),
+                                  fontSize: 65, fontWeight: FontWeight.bold),
                               maxFontSize: 100,
                               maxLines: 3,
                             ),
@@ -50,7 +50,7 @@ class HomeResponsive extends StatelessWidget {
                                     icon: const Icon(FontAwesomeIcons.github)),
                                 IconButton(
                                     onPressed: () {},
-                                    icon: const Icon(Icons.person))
+                                    icon: const Icon(Icons.email_sharp))
                               ],
                             )
                           ],

@@ -1,3 +1,4 @@
+import 'package:cv_flutter/pages/widgets/exp_resonsive.dart';
 import 'package:cv_flutter/pages/widgets/responsive_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -18,10 +19,11 @@ class HomePage extends StatelessWidget {
       body: Align(
         alignment: Alignment.center,
         child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 1400),
+            constraints: const BoxConstraints(maxWidth: 1000),
             child: ListView(
               children: const [
                 HomeResponsive(),
+                ExpResponsive(),
               ],
             )),
       ),
