@@ -6,49 +6,89 @@ class ExpResponsive extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.only(top: 200, left: 150),
-        child: LayoutBuilder(
-          builder: (builder, constraints) {
-            return constraints.maxWidth > 700
-                ? Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        'Experiência',
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(
-                        height: 16,
-                      ),
-                      const Text(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat turpis rhoncus facilisis. Praesent sit amet nisi metus. Proin finibus lacinia orci nec convallis',
-                        style: TextStyle(fontSize: 16, color: Colors.grey),
-                      ),
-                      const SizedBox(
-                        height: 60,
-                      ),
-                      Wrap(
-                        children: const [
-                          ExpCard(
-                              icon: Icons.abc,
-                              title: 'Estágiairo',
-                              time: '2022 - atualmente'),
-                          ExpCard(
-                              icon: Icons.abc,
-                              title: 'Estágiairo',
-                              time: '2022 - atualmente'),
-                          ExpCard(
-                              icon: Icons.abc,
-                              title: 'Estágiairo',
-                              time: '2022 - atualmente')
-                        ],
-                      )
-                    ],
-                  )
-                : Container();
-          },
-        ));
+    return LayoutBuilder(
+      builder: (builder, constraints) {
+        return constraints.maxWidth > 700
+            ? Padding(
+                padding: const EdgeInsets.only(left: 120),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Experiência',
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    const Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut, egestas in ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in iaculis sem. Nulla rhoncus, purus vel ullamcorper accumsan, massa sem volutpat augue, ut laoreet lorem leo auctor ex. Phasellus dapibus ',
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                    ),
+                    const SizedBox(
+                      height: 100,
+                    ),
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      children: const [
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente'),
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente'),
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente')
+                      ],
+                    )
+                  ],
+                ),
+              )
+            : Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Experiência',
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    const Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut, egestas in ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in iaculis sem.',
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                    ),
+                    const SizedBox(
+                      height: 100,
+                    ),
+                    Wrap(
+                      children: const [
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente'),
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente'),
+                        ExpCard(
+                            icon: Icons.person,
+                            title: 'Estágiairo',
+                            time: '2022 - atualmente')
+                      ],
+                    )
+                  ],
+                ),
+              );
+      },
+    );
   }
 }

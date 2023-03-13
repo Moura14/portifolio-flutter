@@ -9,7 +9,7 @@ class HomeResponsive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 120),
+      padding: const EdgeInsets.only(top: 120, bottom: 120),
       child: Column(
         children: [
           LayoutBuilder(builder: (context, constraints) {
@@ -59,7 +59,7 @@ class HomeResponsive extends StatelessWidget {
                     ],
                   )
                 : Padding(
-                    padding: const EdgeInsets.all(20),
+                    padding: const EdgeInsets.only(top: 120, left: 10),
                     child: Column(
                       children: [
                         Image.asset('images/home.png'),
