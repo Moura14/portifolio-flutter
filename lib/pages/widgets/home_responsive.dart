@@ -26,7 +26,7 @@ class HomeResponsive extends StatelessWidget {
                             const AutoSizeText(
                               'Desenvolvedor Mobile | Flutter & Dart',
                               style: TextStyle(
-                                  fontSize: 65, fontWeight: FontWeight.bold),
+                                  fontSize: 60, fontWeight: FontWeight.bold),
                               maxFontSize: 100,
                               maxLines: 3,
                             ),

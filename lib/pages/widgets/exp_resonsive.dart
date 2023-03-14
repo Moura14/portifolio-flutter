@@ -10,7 +10,7 @@ class ExpResponsive extends StatelessWidget {
       builder: (builder, constraints) {
         return constraints.maxWidth > 700
             ? Padding(
-                padding: const EdgeInsets.only(left: 120),
+                padding: const EdgeInsets.only(left: 100),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -23,7 +23,7 @@ class ExpResponsive extends StatelessWidget {
                       height: 16,
                     ),
                     const Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut, egestas in ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in iaculis sem. Nulla rhoncus, purus vel ullamcorper accumsan, massa sem volutpat augue, ut laoreet lorem leo auctor ex. Phasellus dapibus ',
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut, ',
                       style: TextStyle(fontSize: 16, color: Colors.grey),
                     ),
                     const SizedBox(
@@ -31,19 +31,27 @@ class ExpResponsive extends StatelessWidget {
                     ),
                     Wrap(
                       alignment: WrapAlignment.center,
+                      spacing: 8.0,
                       children: const [
                         ExpCard(
                             icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente'),
+                            title: 'Estágiario',
+                            time: 'Polícia Civil do Distrito Federal',
+                            descrition:
+                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
                         ExpCard(
                             icon: Icons.person,
                             title: 'Estágiairo',
-                            time: '2022 - atualmente'),
+                            time: '2022 - atualmente',
+                            descrition:
+                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
                         ExpCard(
-                            icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente')
+                          icon: Icons.person,
+                          title: 'Estágiairo',
+                          time: '2022 - atualmente',
+                          descrition:
+                              'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos',
+                        )
                       ],
                     )
                   ],
@@ -57,32 +65,39 @@ class ExpResponsive extends StatelessWidget {
                     const Text(
                       'Experiência',
                       style:
-                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(
                       height: 16,
                     ),
                     const Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut, egestas in ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in iaculis sem.',
-                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut ',
+                      style: TextStyle(fontSize: 15, color: Colors.grey),
                     ),
                     const SizedBox(
                       height: 100,
                     ),
                     Wrap(
+                      runSpacing: 4.0,
                       children: const [
                         ExpCard(
                             icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente'),
+                            title: 'Estágiario',
+                            time: 'Polícia Civil do Distrito Federal',
+                            descrition:
+                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
                         ExpCard(
                             icon: Icons.person,
                             title: 'Estágiairo',
-                            time: '2022 - atualmente'),
+                            time: '2022 - atualmente',
+                            descrition:
+                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
                         ExpCard(
                             icon: Icons.person,
                             title: 'Estágiairo',
-                            time: '2022 - atualmente')
+                            time: '2022 - atualmente',
+                            descrition:
+                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos')
                       ],
                     )
                   ],
