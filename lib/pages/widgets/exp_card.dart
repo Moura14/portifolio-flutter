@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ExpCard extends StatelessWidget {
   //ExpCard({super.key});
@@ -20,12 +21,16 @@ class ExpCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isPhone = ResponsiveWrapper.of(context).isMobile;
     return SizedBox(
-      width: isPhone ? double.infinity : 250,
+      height: 320,
+      width: isPhone ? double.infinity : 300,
       child: Card(
         shadowColor: Colors.black,
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment:
+                isPhone ? CrossAxisAlignment.start : CrossAxisAlignment.center,
             children: [
               Icon(
                 icon,
@@ -48,6 +53,19 @@ class ExpCard extends StatelessWidget {
               Text(
                 descrition,
                 style: const TextStyle(fontSize: 15, color: Colors.grey),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+              SizedBox(
+                height: 40,
+                child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
+                    ),
+                    onPressed: () {},
+                    icon: const Icon(FontAwesomeIcons.github),
+                    label: const Text('Ver código no GitHub')),
               )
             ],
           ),

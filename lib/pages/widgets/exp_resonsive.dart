@@ -30,6 +30,7 @@ class ExpResponsive extends StatelessWidget {
                       height: 100,
                     ),
                     Wrap(
+                      runSpacing: 4.0,
                       alignment: WrapAlignment.center,
                       spacing: 8.0,
                       children: const [
@@ -38,19 +39,19 @@ class ExpResponsive extends StatelessWidget {
                             title: 'Estágiario',
                             time: 'Polícia Civil do Distrito Federal',
                             descrition:
-                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                                'Identificação das diferentes abordagens para implementação de técnica da super-resolução. Construção de algoritmo com linguagem Python. '),
                         ExpCard(
                             icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente',
+                            title: 'Desenvolvedor Mobile',
+                            time: 'OLX clone',
                             descrition:
-                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                                ' clone do aplicativo OLX feito com Flutter e MobX para gerenciamento de estado e Parse Server para armazenamento de informações dos clientes '),
                         ExpCard(
                           icon: Icons.person,
-                          title: 'Estágiairo',
-                          time: '2022 - atualmente',
+                          title: 'Desenvolvedor Mobile',
+                          time: 'Loja virtual',
                           descrition:
-                              'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos',
+                              'Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias, cupom de desconto e etc',
                         )
                       ],
                     )
@@ -88,16 +89,16 @@ class ExpResponsive extends StatelessWidget {
                                 'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
                         ExpCard(
                             icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente',
+                            title: 'Desenvolvedor Mobile',
+                            time: 'OLX clone',
                             descrition:
-                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos'),
+                                'clone do aplicativo OLX feito com Flutter e MobX para gerenciamento de estado e Parse Server para armazenamento de informações dos clientes, vendas, produtos e etc.'),
                         ExpCard(
                             icon: Icons.person,
-                            title: 'Estágiairo',
-                            time: '2022 - atualmente',
+                            title: 'Desenvolvedor Mobile',
+                            time: 'Loja virtual',
                             descrition:
-                                'Desenvolvimento de uma solução tecnológica para implementação da técnica de super-resolução em imagens de vídeos')
+                                'Aplicativo feito em Flutter com Firebase para Loja Virtual com login por email, pesquisa de produtos, carrinho de compras, lista de categorias, cupom de desconto e etc..')
                       ],
                     )
                   ],

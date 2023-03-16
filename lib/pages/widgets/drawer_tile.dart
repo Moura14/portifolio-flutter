@@ -1,3 +1,4 @@
+import 'package:cv_flutter/pages/widgets/exp_resonsive.dart';
 import 'package:flutter/material.dart';
 
 class DrawerTile extends StatelessWidget {
@@ -12,7 +13,12 @@ class DrawerTile extends StatelessWidget {
           ListTile(
             title: const Text('Experiência'),
             textColor: Colors.black,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context)
+                  .pushReplacement(MaterialPageRoute(builder: (_) {
+                return const ExpResponsive();
+              }));
+            },
           ),
           ListTile(
             title: const Text('Formação'),
