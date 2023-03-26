@@ -30,8 +30,8 @@ class ExpResponsive extends StatelessWidget {
                       height: 100,
                     ),
                     Wrap(
-                      runSpacing: 4.0,
                       alignment: WrapAlignment.center,
+                      runSpacing: 4.0,
                       spacing: 8.0,
                       children: const [
                         ExpCard(

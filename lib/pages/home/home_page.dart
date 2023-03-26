@@ -1,4 +1,5 @@
 import 'package:cv_flutter/pages/widgets/exp_resonsive.dart';
+import 'package:cv_flutter/pages/widgets/forma_responsive.dart';
 import 'package:cv_flutter/pages/widgets/responsive_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,7 @@ class HomePage extends StatelessWidget {
               children: const [
                 HomeResponsive(),
                 ExpResponsive(),
+                FormaResponsive()
               ],
             )),
       ),

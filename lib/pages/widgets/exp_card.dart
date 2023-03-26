@@ -19,10 +19,10 @@ class ExpCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isPhone = ResponsiveWrapper.of(context).isMobile;
+    final isMobile = ResponsiveWrapper.of(context).isMobile;
     return SizedBox(
-      height: 320,
-      width: isPhone ? double.infinity : 300,
+      height: 300,
+      width: isMobile ? double.infinity : 280,
       child: Card(
         shadowColor: Colors.black,
         child: Padding(
@@ -30,7 +30,7 @@ class ExpCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment:
-                isPhone ? CrossAxisAlignment.start : CrossAxisAlignment.center,
+                isMobile ? CrossAxisAlignment.start : CrossAxisAlignment.center,
             children: [
               Icon(
                 icon,
