@@ -1,4 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:cv_flutter/pages/widgets/formation_item.dart';
 import 'package:flutter/material.dart';
 
 class FormaResponsive extends StatelessWidget {
@@ -9,7 +10,7 @@ class FormaResponsive extends StatelessWidget {
     return LayoutBuilder(builder: (builder, constraints) {
       return constraints.maxWidth > 700
           ? Padding(
-              padding: const EdgeInsets.only(left: 100, top: 200),
+              padding: const EdgeInsets.only(top: 200, left: 100),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -21,20 +22,39 @@ class FormaResponsive extends StatelessWidget {
                     height: 40,
                   ),
                   Row(
-                    children: const [
-                      FlutterLogo(
-                        size: 215,
+                    children: [
+                      Expanded(
+                        child: Image.asset('images/education.png'),
                       ),
-                      SizedBox(
-                        width: 90,
+                      const SizedBox(
+                        width: 100,
                       ),
                       Expanded(
-                        child: AutoSizeText(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
-                          style: TextStyle(fontSize: 15, color: Colors.grey),
-                          maxLines: 3,
-                        ),
-                      )
+                          child: Column(
+                        children: const [
+                          AutoSizeText(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
+                            style: TextStyle(fontSize: 20, color: Colors.black),
+                            maxLines: 3,
+                            textAlign: TextAlign.justify,
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          FormationItem(
+                            title: 'Formação',
+                            icon: Icons.abc,
+                          ),
+                          FormationItem(
+                            title: 'Formação',
+                            icon: Icons.abc,
+                          ),
+                          FormationItem(
+                            title: 'Formação',
+                            icon: Icons.abc,
+                          )
+                        ],
+                      )),
                     ],
                   )
                 ],
