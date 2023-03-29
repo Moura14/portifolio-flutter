@@ -16,7 +16,11 @@ class HomeResponsive extends StatelessWidget {
             return constraints.maxWidth > 700
                 ? Row(
                     children: [
-                      Expanded(child: Image.asset('images/home.png')),
+                      Expanded(
+                          child: SizedBox(
+                        height: 350,
+                        child: Image.asset('images/home.png'),
+                      )),
                       const SizedBox(
                         width: 90,
                       ),

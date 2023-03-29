@@ -39,6 +39,8 @@ dependencies:
   url_launcher: ^6.1.6
   auto_size_text: ^3.0.0
   google_fonts: ^4.0.3
+  auto_route: ^6.0.3
+  build_runner: ^2.3.3
 
 dev_dependencies:
   flutter_test:

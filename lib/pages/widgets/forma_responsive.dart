@@ -10,7 +10,7 @@ class FormaResponsive extends StatelessWidget {
     return LayoutBuilder(builder: (builder, constraints) {
       return constraints.maxWidth > 700
           ? Padding(
-              padding: const EdgeInsets.only(top: 200, left: 100),
+              padding: const EdgeInsets.only(top: 200, left: 100, right: 100),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -24,18 +24,20 @@ class FormaResponsive extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Image.asset('images/education.png'),
+                        child: Image.asset(
+                          'images/education.png',
+                        ),
                       ),
                       const SizedBox(
-                        width: 100,
+                        width: 30,
                       ),
                       Expanded(
                           child: Column(
                         children: const [
                           AutoSizeText(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
-                            style: TextStyle(fontSize: 20, color: Colors.black),
-                            maxLines: 3,
+                            style: TextStyle(fontSize: 15, color: Colors.grey),
+                            maxLines: 5,
                             textAlign: TextAlign.justify,
                           ),
                           SizedBox(
@@ -60,8 +62,43 @@ class FormaResponsive extends StatelessWidget {
                 ],
               ),
             )
-          : Container(
-              color: Colors.black,
+          : Padding(
+              padding: const EdgeInsets.only(top: 60, left: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Formação',
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  SizedBox(
+                    height: 350,
+                    child: Image.asset('images/education.png'),
+                  ),
+                  const Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
+                    style: TextStyle(fontSize: 15, color: Colors.grey),
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  const FormationItem(
+                    title: 'Formação',
+                    icon: Icons.abc,
+                  ),
+                  const FormationItem(
+                    title: 'Formação',
+                    icon: Icons.abc,
+                  ),
+                  const FormationItem(
+                    title: 'Formação',
+                    icon: Icons.abc,
+                  )
+                ],
+              ),
             );
     });
   }
