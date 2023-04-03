@@ -1,3 +1,4 @@
+import 'package:cv_flutter/pages/widgets/exp_resonsive.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -41,7 +42,12 @@ class ResponaiveAppBar extends StatelessWidget {
                                     child: Row(
                                       children: [
                                         TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              Navigator.of(context).push(
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          const ExpResponsive()));
+                                            },
                                             child: const Text(
                                               'Experiência',
                                               style:

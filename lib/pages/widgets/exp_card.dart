@@ -21,7 +21,7 @@ class ExpCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isMobile = ResponsiveWrapper.of(context).isMobile;
     return SizedBox(
-      height: 300,
+      height: 400,
       width: isMobile ? double.infinity : 280,
       child: Card(
         shadowColor: Colors.black,

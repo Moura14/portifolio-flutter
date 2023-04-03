@@ -35,7 +35,7 @@ class FormaResponsive extends StatelessWidget {
                           child: Column(
                         children: const [
                           AutoSizeText(
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
+                            'Possuo o ensino médio completo e atualmente estou cursando análise e desenvolvimento de sistemas. Além de sempre estar fazendo cursos complementares para sempre me manter atualizado',
                             style: TextStyle(fontSize: 15, color: Colors.grey),
                             maxLines: 5,
                             textAlign: TextAlign.justify,
@@ -44,17 +44,14 @@ class FormaResponsive extends StatelessWidget {
                             height: 16,
                           ),
                           FormationItem(
-                            title: 'Formação',
-                            icon: Icons.abc,
+                            title: 'Ensino médio completo',
+                            icon: Icons.account_circle,
                           ),
                           FormationItem(
-                            title: 'Formação',
-                            icon: Icons.abc,
+                            title:
+                                'Técnologo em Análise e Desenvolvimento de Sistemas (em andamento)',
+                            icon: Icons.account_circle,
                           ),
-                          FormationItem(
-                            title: 'Formação',
-                            icon: Icons.abc,
-                          )
                         ],
                       )),
                     ],
@@ -79,24 +76,21 @@ class FormaResponsive extends StatelessWidget {
                     child: Image.asset('images/education.png'),
                   ),
                   const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam tincidunt odio quis mollis. Maecenas lacinia nec tellus a vulputate. Maecenas ullamcorper lectus id ex congue',
+                    'Possuo o ensino médio completo e atualmente estou cursando Análise e Desenvolvimento de Sistemas. Além de sempre estar fazendo cursos complementares para sempre me manter atualizado',
                     style: TextStyle(fontSize: 15, color: Colors.grey),
                   ),
                   const SizedBox(
                     height: 16,
                   ),
                   const FormationItem(
-                    title: 'Formação',
-                    icon: Icons.abc,
+                    title: 'Ensino médio completo',
+                    icon: Icons.account_circle,
                   ),
                   const FormationItem(
-                    title: 'Formação',
-                    icon: Icons.abc,
+                    title:
+                        'Técnologo em Análise e Desenvolvimento de Sistemas (em andamento)',
+                    icon: Icons.account_circle,
                   ),
-                  const FormationItem(
-                    title: 'Formação',
-                    icon: Icons.abc,
-                  )
                 ],
               ),
             );
