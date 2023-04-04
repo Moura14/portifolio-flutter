@@ -10,7 +10,8 @@ class FormaResponsive extends StatelessWidget {
     return LayoutBuilder(builder: (builder, constraints) {
       return constraints.maxWidth > 700
           ? Padding(
-              padding: const EdgeInsets.only(top: 200, left: 100, right: 100),
+              padding: const EdgeInsets.only(
+                  top: 200, left: 100, right: 100, bottom: 100),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -60,7 +61,7 @@ class FormaResponsive extends StatelessWidget {
               ),
             )
           : Padding(
-              padding: const EdgeInsets.only(top: 60, left: 20),
+              padding: const EdgeInsets.only(top: 60, left: 20, bottom: 100),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

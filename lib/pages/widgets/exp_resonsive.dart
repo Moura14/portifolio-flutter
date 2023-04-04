@@ -72,7 +72,7 @@ class ExpResponsive extends StatelessWidget {
                       height: 16,
                     ),
                     const Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris mi, sodales vel risus ac, interdum lacinia diam. Etiam quis purus elit. Nam porta ut quam ac sollicitudin. Ut est nunc, cursus id aliquam ut ',
+                      'Atualmente sou estágiario em um projeto de super-resolução na Polícia Cívil do Distrito Federal. Possuo também vários projetos práticos no meu GitHub',
                       style: TextStyle(fontSize: 15, color: Colors.grey),
                     ),
                     const SizedBox(
