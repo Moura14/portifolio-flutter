@@ -1,9 +1,10 @@
-import 'package:cv_flutter/pages/widgets/exp_resonsive.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class ResponaiveAppBar extends StatelessWidget {
-  const ResponaiveAppBar({super.key});
+  const ResponaiveAppBar({required this.onMenuClick, super.key});
+
+  final ValueChanged<int> onMenuClick;
 
   @override
   Widget build(BuildContext context) {
@@ -43,10 +44,7 @@ class ResponaiveAppBar extends StatelessWidget {
                                       children: [
                                         TextButton(
                                             onPressed: () {
-                                              Navigator.of(context).push(
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          const ExpResponsive()));
+                                              onMenuClick(1);
                                             },
                                             child: const Text(
                                               'Experiência',
@@ -57,7 +55,9 @@ class ResponaiveAppBar extends StatelessWidget {
                                           width: 12,
                                         ),
                                         TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              onMenuClick(2);
+                                            },
                                             child: const Text(
                                               'Formação',
                                               style:
@@ -67,7 +67,9 @@ class ResponaiveAppBar extends StatelessWidget {
                                           width: 12,
                                         ),
                                         TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              onMenuClick(3);
+                                            },
                                             child: const Text(
                                               'Contato',
                                               style:

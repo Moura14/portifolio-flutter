@@ -26,7 +26,7 @@ class ContactResponsive extends StatelessWidget {
             child: Column(
               children: const [
                 FormationItem(
-                  title: 'Email',
+                  title: 'jgmoura.dev@gmial.com',
                   icon: Icons.email_sharp,
                 ),
                 FormationItem(
